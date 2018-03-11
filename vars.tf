@@ -10,4 +10,3 @@ variable "public_ip" {
 
 variable "org_name" {}
 variable "company_name" {}
-variable "service_name" {}
