@@ -12,10 +12,6 @@ output "subnet_id" {
   value = "${aws_subnet.subnet.id}"
 }
 
-output "subnet_cidr" {
-  value = "${var.subnet_cidr}"
-}
-
 resource "aws_route_table_association" "default" {
   subnet_id      = "${aws_subnet.subnet.id}"
   route_table_id = "${var.route_table_id}"
@@ -23,8 +19,4 @@ resource "aws_route_table_association" "default" {
 
 output "subnet_id" {
   value = "${aws_subnet.subnet.id}"
-}
-
-output "subnet_cidr" {
-  value = "${var.subnet_cidr}"
 }
