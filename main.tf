@@ -8,10 +8,6 @@ resource "aws_subnet" "subnet" {
   }
 }
 
-output "subnet_id" {
-  value = "${aws_subnet.subnet.id}"
-}
-
 resource "aws_route_table_association" "default" {
   subnet_id      = "${aws_subnet.subnet.id}"
   route_table_id = "${var.route_table_id}"
