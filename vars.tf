@@ -7,6 +7,3 @@ variable "vpc_id" {}
 variable "public_ip" {
   default = true
 }
-
-variable "org_name" {}
-variable "company_name" {}
