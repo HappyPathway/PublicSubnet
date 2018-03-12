@@ -7,3 +7,4 @@ variable "vpc_id" {}
 variable "public_ip" {
   default = true
 }
+variable "availability_zone" {}
